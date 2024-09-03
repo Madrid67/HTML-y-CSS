@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Iniciar Sesión</title>
+ <style>
+  
+  body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+   background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+  }
+  
+  
+  .menu {
+   width: 100%;
+   height: 50px;
+   background-color: #4CAF50;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+  }
+  
+ 
+  form {
+   width: 300px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   animation: aparecer 1s;
+  }
+  
+
+  table {
+   width: 100%;
+   border-collapse: collapse;
+  }
+  
+  th, td {
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+  }
+  
+
+  input[type="text"], input[type="password"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   transition: all 0.5s;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus {
+   border-color: #4CAF50;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  input[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   background-color: #4CAF50;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.5s;
+  }
+  
+  input[type="submit"]:hover {
+   background-color: #3e8e41;
+   transform: scale(1.1);
+  }
+  
+ 
+  a {
+   text-decoration: none;
+   color: #337ab7;
+   transition: all 0.5s;
+  }
+  
+  a:hover {
+   color: #23527c;
+   text-decoration: underline;
+  }
+  
+
+  footer {
+   text-align: center;
+   margin-top: 20px;
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+  }
+  
+ 
+ </style>
+</head>
+<body>
+ <div class="menu">
+  <h1>Iniciar Sesión</h1>
+ </div>
+ <form>
+ <table>
+ <tr>
+ <td><label>Usuario:</label></td>
+ <td><input type="text" name="usuario" required></td>
+ </tr>
+ <tr>
+ <td><label>Contraseña:</label></td>
+ <td><input type="password" name="contraseña" required></td>
+ </tr>
+ </table>
+ <p><input type="submit" value="Iniciar Sesión" onclick="iniciarSesion()"></p>
+ <p> <a href="#">Olvidó su contraseña?</a></p>
+ </form>
+ <footer>
+ <p>&copy; Daniel Madrid Giraldo</p>
+ </footer>
+ 
+ <script>
+  function iniciarSesion() {
+   alert("Inicio de sesión exitoso!");
+  }
+ </script>
+</body>
+</html>
